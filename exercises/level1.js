@@ -10,20 +10,20 @@
  */
 // example user data
 const user = {
-  first: 'John',
-  last: 'Doe',
-  password: '12345',
-  birthYear: 1990
+  first: "John",
+  last: "Doe",
+  password: "12345",
+  birthYear: 1990,
 };
 
 /**
  * Accessing Properties:
  * use the object data to return the password for the user
- * @param {User} user 
+ * @param {User} user
  * @returns {string}
  */
 function level1exercise1(user) {
-  
+  return user.password;
 }
 
 /**
@@ -33,7 +33,7 @@ function level1exercise1(user) {
  * @returns {string}
  */
 function level1exercise2(user) {
-
+  return user.first + " " + user.last;
 }
 
 /**
@@ -43,7 +43,7 @@ function level1exercise2(user) {
  * @returns {string}
  */
 function level1exercise3(user) {
-  
+  return "Hello," + " " + user.first + " " + user.last + "!";
 }
 
 /**
@@ -53,7 +53,7 @@ function level1exercise3(user) {
  * @returns {number}
  */
 function level1exercise4(user) {
-
+  return 2022 - user.birthYear;
 }
 
 /**
@@ -63,7 +63,7 @@ function level1exercise4(user) {
  * @returns {string}
  */
 function level1exercise5(user) {
-
+  return user.first.toUpperCase() + " " + user.last.toUpperCase();
 }
 
 /**
@@ -73,5 +73,5 @@ function level1exercise5(user) {
  * @returns {string}
  */
 function level1exercise6(user) {
-
+  return user.first[0] + user.last[0];
 }

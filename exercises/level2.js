@@ -16,26 +16,26 @@
 // example user data
 const user2 = {
   name: {
-    first: 'John',
-    last: 'Doe'
+    first: "John",
+    last: "Doe",
   },
   security: {
-    password: '12345',
-    pin: '1234',
-    lastLogin: '2019-01-01'
+    password: "12345",
+    pin: "1234",
+    lastLogin: "2019-01-01",
   },
-  username: 'pcakes4life',
-  email: 'jdoe@hotmail.com'
-}
+  username: "pcakes4life",
+  email: "jdoe@hotmail.com",
+};
 
 /**
  * Working with Nested Object Properties:
  * Use the object data to return the user's password
- * @param {UserData} user 
+ * @param {UserData} user
  * @returns {string}
  */
 function level2exercise1(user) {
-
+  return user.security.password;
 }
 
 /**
@@ -45,7 +45,7 @@ function level2exercise1(user) {
  * @returns {string}
  */
 function level2exercise2(user) {
-
+  return user.name.first + " " + user.name.last;
 }
 
 /**
@@ -55,7 +55,7 @@ function level2exercise2(user) {
  * @returns {string}
  */
 function level2exercise3(user) {
-
+  return user.name.first[0] + user.name.last[0];
 }
 
 /**
@@ -65,7 +65,11 @@ function level2exercise3(user) {
  * @returns {boolean}
  */
 function level2exercise4(user) {
-
+  if (user.security.password.length >= 8) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -75,5 +79,7 @@ function level2exercise4(user) {
  * @returns {boolean}
  */
 function level2exercise5(user) {
-
+  const todaysDate = "2022-04-25";
+  currentDate = todaysDate.getTime();
+  userDate = user.security.lastLogin.getTime();
 }
