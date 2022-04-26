@@ -79,7 +79,10 @@ function level2exercise4(user) {
  * @returns {boolean}
  */
 function level2exercise5(user) {
-  const todaysDate = "2022-04-25";
   currentDate = todaysDate.getTime();
   userDate = user.security.lastLogin.getTime();
+
+  console.log(currentDate);
 }
+
+level2exercise5(user2);
